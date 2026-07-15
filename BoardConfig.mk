@@ -142,7 +142,8 @@ TW_INCLUDE_LPTOOLS := true
 TW_INCLUDE_NTFS_3G := true
 
 # Vendor Modules
-TW_LOAD_VENDOR_MODULES := $(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)
+#TW_LOAD_VENDOR_MODULES := $(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 # Status Bar UI
 TW_STATUS_ICONS_ALIGN := center
